@@ -4,12 +4,12 @@ use framework\Template;
 include 'config/config.php';
 class Controller extends Template
 {
-	
+	// 初始化
 	public function __construct()
 	{
 		parent::__construct('app/admin/view/', 'cache/admin');
 	}
-
+	
 	public function display($tplFile = null, $isInclude = true)
 	{
 		if (is_null($tplFile)) {
