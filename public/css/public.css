@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =============================================================================
+   CSS Reset
+   ========================================================================== */
+/*
+Eric Meyer's CSS Reset v2.0 
+http://meyerweb.com/eric/tools/css/reset/ 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font:Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+	list-style:none;
+	font-family:微软雅黑;
+}
+* {
+	outline: none !important;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* =============================================================================
+   Fix the clear issue
+   ========================================================================== */
+.hide {
+	display: none;
+}
+.clear {
+	clear: both !important;
+	display: block !important;
+	font-size:0 !important;
+	height:0 !important;
+	line-height: 0 !important;
+	width: 100% !important;
+	margin:0 !important;
+	padding:0 !important;
+	border:0 !important;
+	
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+} /* Hide from IE Mac \*/
+.clearfix {
+	display: block;
+} /* End hide from IE Mac */
+.clear-fixed {
+	height: 100%;
+	overflow: hidden;
+}
+/* =============================================================================
+   Links & Image
+   ========================================================================== */
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	outline: none;
+}
+a img {
+	border: none;
+}
+img {
+	vertical-align:top;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+::-moz-selection {
+background: #F78118;
+color: #FFFFFF;
+text-shadow: none;
+}
+::selection {
+	background: #F78118;
+	color: #FFFFFF;
+	text-shadow: none;
+}
+body {
+	line-height: 1;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+em, i, dfn {
+	font-style: italic;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCCCCC;
+	margin: 1em 0;
+	padding: 0;
+}
+ins {
+	background: #FFFF99;
+	color: #000000;
+	text-decoration: none;
+}
+mark {
+	background: #FFFF00;
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+small {
+	font-size: 85%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* =============================================================================
+   Button, input, textarea
+   ========================================================================== */
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+*vertical-align: middle;
+}
+button, input {
+	line-height: normal;
+*overflow: visible;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td {
+	vertical-align: top;
+}
+/* =============================================================================
+   DDsmoothmenu
+   ========================================================================== */
+.ddsmoothmenu ul {
+	z-index: 200;
+}
+.ddsmoothmenu ul li {
+	position: relative;
+}
+.ddsmoothmenu ul li ul {
+	position: absolute;
+	left: 0;
+	display: none;
+	visibility: hidden;
+}
+.ddsmoothmenu ul li ul li {
+	float: none;
+}
+.ddsmoothmenu ul li ul li ul {
+	top: 0;
+}
+.ddsmoothmenu ul li ul li a {
+	width: 140px;
+}
+.downarrowclass, .rightarrowclass {
+	display: none;
+}
+/* =============================================================================
+   Styles
+   ========================================================================== */
+header #top-menu ul li a:hover, header #top-menu ul li.current_page_item a, header #top-menu ul li.current-menu-item a, header #top-menu ul li a.selected, header #top-menu ul li ul, .pagination a, .pagination span, .normal-pagination span a, .comment-pagination a, .comment-pagination span, .single-page-navigation a, .post-more a, .portfolio-menu li a, .product-menu li a, .notice-sidebar, .sc-tabs-wrap, .sc-toggle, .sc-iconbox, .sc-testimonials .box, #respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url, #respond .comment-form-comment, #respond .form-submit input, .contact-form-wrap dl, .contact-form-wrap .contact-form-content, .contact-form-wrap #send-message {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .20);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .20);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .20);
+}
+.post-thumb, .post-thumb-comment, .flickr_badge_image, .sc-testimonials .avatar, .nivoSlider-wrap, .cycleslider-wrap, .sc-box {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+}
+header #top-menu ul li a:hover, header #top-menu ul li.current_page_item a, header #top-menu ul li.current-menu-item a, header #top-menu ul li a.selected, header #top-menu ul li ul, .wp-post-image, .avatar, .pagination a, .pagination span, .normal-pagination span a, .comment-pagination a, .comment-pagination span, .single-page-navigation a, .post-more a, .portfolio-menu li a, .product-menu li a, .notice-sidebar, .flickr_badge_image img, .gallery .gallery-item img, .sc-testimonials .avatar img, .widget-ads img, .sc-tabs-wrap, .sc-toggle, .sc-iconbox, .sc-testimonials .box, #respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url, #respond .comment-form-comment, #respond .form-submit input, .contact-form-wrap dl, .contact-form-wrap .contact-form-content, .contact-form-wrap #send-message {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.post-thumb, .post-thumb-comment, .flickr_badge_image, code, pre, .sc-testimonials .avatar, .nivoSlider-wrap, .cycleslider-wrap, .sc-box {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+header #top-menu ul li ul li a:hover, header #top-menu ul li ul li a.selected, header #top-menu ul li.current_page_item ul li a, header #top-menu ul li.current-menu-item ul li a, header #top-menu ul li.current_page_parent ul li.current_page_item a, header #top-menu ul li.current_page_item ul li a:hover, header #top-menu ul li.current-menu-item ul li a:hover, header #top-menu ul li.current_page_parent ul li a:hover, header #top-menu ul li.current-menu-parent ul li a:hover, #slides .pagination li a {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+header #top-menu ul li ul li a:hover, header #top-menu ul li ul li a.selected, header #top-menu ul li.current_page_item ul li a, header #top-menu ul li.current-menu-item ul li a, header #top-menu ul li.current_page_parent ul li a, header #top-menu ul li.current-menu-parent ul li a, header #top-menu ul li.current_page_parent ul li.current_page_item a, header #top-menu ul li.current_page_item ul li a:hover, header #top-menu ul li.current-menu-item ul li a:hover, header #top-menu ul li.current_page_parent ul li a:hover, header #top-menu ul li.current-menu-parent ul li a:hover, #slides .pagination li a {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.post-thumb, .post-thumb-comment {
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	padding: 9px;
+}
+.post-thumb img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.post-thumb a {
+	display: block;
+	position: relative;
+	background-image: url(../images/loading.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.post-more {
+	float: left;
+}
+.post-more a {
+	display: block;
+	padding: 0 15px;
+	margin-right: 10px;
+}
+.pagination a, .pagination span, .normal-pagination span a, .comment-pagination a, .comment-pagination span, .post-more a, .portfolio-menu li a, .product-menu li a, #respond .form-submit input, .contact-form-wrap #send-message, .single-page-navigation a {
+	display: block;
+	height: 28px;
+	line-height: 27px;
+	background-image: url(../images/btn.png);
+	border-left: 1px solid #D2D2D2;
+	border-top: 1px solid #E5E5E5;
+	border-right: 1px solid #D2D2D2;
+	border-bottom: 1px solid #C1C1C1;
+	color: #666666;
+}
+.post-more a {
+	height: 21px;
+	line-height: 20px;
+}
+.no-post {
+	text-align: center;
+}
+.clr:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clr {
+	zoom: 1;
+}
+
+
+
+
+
+/*********************************自定义部分*********************************************/
+body{}
+
+
+/* leftsead */
+#leftsead{width:131px;height:290px;position:fixed;top:400px;right:0px; z-index:100;}
+*html #leftsead{margin-top:258px;position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+#leftsead li{width:131px;height:60px;}
+#leftsead li img{float:right;}
+#leftsead li a{height:49px;float:right;display:block;min-width:47px;max-width:131px;}
+#leftsead li a .shows{display:block;}
+#leftsead li a .hides{margin-right:-143px;cursor:pointer;cursor:hand;}
+#leftsead li a.youhui .hides{display:none;position:absolute;right:190px;top:20px;}
+
+
+/**************header***************/
+
+.header .shang{ width:100%; background-color:#232323; height:30px; font-size:12px; color:#fff; line-height:30px;}
+.header .shang .zhongJian{ width:1000px; margin:0 auto;}
+.shang .zhongJian .zLeft{ float:left;color:#999999;}
+.shang .zhongJian .zRight{ float:right;}
+.zhongJian .zRight span{ float:left; padding:0 8px;}
+.zRight .ones a{ color:#999999; background:url(../images/images/denglu_03.png) no-repeat; padding-left:20px;}
+.zRight .twos a{ color:#999999; background:url(../images/images/denglu_05.png) no-repeat; padding-left:20px;}
+.zRight span a:hover{ color:#fff;}
+.header .biaotilan{ width:100%; margin:0 auto;position:fixed; z-index:100; background-color:#fff; }
+.header .xia{width:1000px;margin:0 auto;}
+.header .xia .logo{ float:left; padding-top:20px; padding-bottom:4px;}
+.header .xia .daohang{ float:right;}
+.xia .daohang li{ float:left;  font-size:16px; padding:0px 3px 0px 3px; }
+.daohang li a{ color:#1e1e1e; padding:50px 18px 19px 18px; display:block;}
+.daohang li a:hover{ color:#595555; background-color:#eeeeee;}
+.daohang .special a{ color:#595555; background-color:#eeeeee; }
+
+
+
+/**************footer*****************/
+.footer{ width:100%; background-color:#232323; padding-top:16px;}
+.footer .last{ width:1000px; margin:0 auto; text-align:center; font-size:14px;}
+.footer .last p{ color:#5c5c5c; padding-bottom:10px;}
+.last p span{ padding:5px 20px;}
+.footer .last a{ color:#919191;}
+.footer .last a:hover{ color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
